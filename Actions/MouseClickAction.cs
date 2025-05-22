@@ -8,11 +8,18 @@ namespace RPAStudio.Actions
         public int X { get; set; }
         public int Y { get; set; }
 
-        public MouseClickAction(int x, int y)
+        public MouseClickAction(MouseClickActionParams parameters)
         {
-            X = x;
-            Y = y;
+            X = parameters.x;
+            Y = parameters.y;
         }
+
+        // Keep the original constructor for potential other uses or remove if not needed
+        // public MouseClickAction(int x, int y)
+        // {
+        //     X = x;
+        //     Y = y;
+        // }
 
         public override void Execute()
         {

@@ -7,10 +7,16 @@ namespace RPAStudio.Actions
         private static Random random = new Random();
         public string Text { get; set; }
 
-        public KeyboardInput(string text)
+        public KeyboardInput(KeyboardInputParams parameters)
         {
-            Text = text;
+            Text = parameters.text;
         }
+
+        // Keep the original constructor for potential other uses or remove if not needed
+        // public KeyboardInput(string text)
+        // {
+        //     Text = text;
+        // }
 
         public override void Execute()
         {
