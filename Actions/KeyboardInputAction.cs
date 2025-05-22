@@ -1,6 +1,6 @@
 using System;
 
-namespace RPAStudio
+namespace RPAStudio.Actions
 {
     public class KeyboardInput : RpaAction
     {

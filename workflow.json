@@ -1,0 +1,22 @@
+[
+  {
+    "type": "MouseClickAction",
+    "params": {
+      "x": 100,
+      "y": 200
+    }
+  },
+  {
+    "type": "KeyboardInputAction",
+    "params": {
+      "text": "Hello, RPA!"
+    }
+  },
+  {
+    "type": "MouseClickAction",
+    "params": {
+      "x": 300,
+      "y": 400
+    }
+  }
+]
