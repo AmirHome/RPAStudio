@@ -4,6 +4,7 @@ namespace RPAStudio.Actions
 {
     public class KeyboardInput : RpaAction
     {
+        private static Random random = new Random();
         public string Text { get; set; }
 
         public KeyboardInput(string text)
@@ -13,7 +14,9 @@ namespace RPAStudio.Actions
 
         public override void Execute()
         {
-            Console.WriteLine($"Executing Keyboard Input: {Text}");
+            int delay = random.Next(500, 2000); // Random delay between 500ms and 2000ms
+            System.Threading.Thread.Sleep(delay);
+            Console.WriteLine($"Executing Keyboard Input: {Text} with delay {delay}ms");
             // TODO: Implement actual keyboard input logic using platform-specific APIs
         }
     }
